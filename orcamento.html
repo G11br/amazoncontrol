@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Proposta Técnica | AmazonControl para Empresas</title>
+  <meta name="description" content="Solicite uma proposta técnica de controle de pragas para a sua empresa: manejo integrado de pragas, dedetização, desratização, descupinização e sanitização.">
+  <meta name="theme-color" content="#0b1a33">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&family=Mona+Sans:wdth,wght@75..125,200..900&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="orcamento.css?v=4">
+</head>
+<body class="quiz-page">
+  <div class="qbg" aria-hidden="true">
+    <span class="qbg__blob qbg__blob--1"></span>
+    <span class="qbg__blob qbg__blob--2"></span>
+    <span class="qbg__grid"></span>
+  </div>
+
+  <header class="qhead">
+    <a href="index.html" class="logo" aria-label="Voltar ao site da AmazonControl">
+      <span class="logo__icon"><svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg></span>
+      <span class="logo__text"><strong>Amazon<em>Control</em></strong><small>Controle de Pragas para Empresas</small></span>
+    </a>
+    <div class="qhead__progress" aria-hidden="true">
+      <div class="qhead__track"><span id="progressBar"></span></div>
+      <span class="qhead__count" id="progressText"></span>
+    </div>
+    <a href="index.html" class="qhead__close" aria-label="Fechar e voltar ao site">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </a>
+  </header>
+
+  <main class="quiz">
+    <form id="quiz" class="quiz__form" novalidate autocomplete="on">
+      <!-- campo armadilha anti-spam: humanos não veem -->
+      <input type="text" name="empresa_site" id="hp" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <div class="quiz__stage" id="stage" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="qfoot">
+    <button type="button" class="qfoot__back" id="backBtn" aria-label="Voltar para a pergunta anterior">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Voltar
+    </button>
+    <span class="qfoot__secure">
+      <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      Seus dados estão seguros
+    </span>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="icon-shield" viewBox="0 0 64 64">
+        <path d="M32 4 8 13v17c0 15 10.2 27.4 24 30 13.8-2.6 24-15 24-30V13L32 4z" fill="currentColor"/>
+        <circle cx="32" cy="31" r="12" fill="none" stroke="#fff" stroke-width="4"/>
+        <path d="M32 19v24M20 31h24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="31" r="4" fill="#fff"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="config.js?v=3"></script>
+  <script src="orcamento.js?v=6"></script>
+</body>
+</html>

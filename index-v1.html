@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AmazonControl | Dedetização e Sanitização</title>
+  <meta name="description" content="AmazonControl — Especialistas em Controle de Pragas Urbanas. Dedetização, descupinização, desratização e sanitização para residências, empresas e condomínios.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__shield">
+      <svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg>
+    </div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__bar">
+      <a href="#inicio" class="logo" aria-label="AmazonControl - início">
+        <span class="logo__icon"><svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg></span>
+        <span class="logo__text">
+          <strong>Amazon<em>Control</em></strong>
+          <small>Controle de Pragas Urbanas</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <span class="nav__indicator" id="navIndicator" aria-hidden="true"></span>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#ambientes">Ambientes</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header__actions">
+        <a href="orcamento.html" class="btn btn--sm btn--green header__cta magnetic">
+          Orçamento grátis
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+      </div>
+      <span class="header__progress" id="scrollProgress" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#servicos"><small>01</small>Serviços</a>
+      <a href="#processo"><small>02</small>Como funciona</a>
+      <a href="#ambientes"><small>03</small>Ambientes</a>
+      <a href="#duvidas"><small>04</small>Dúvidas</a>
+      <a href="#contato"><small>05</small>Contato</a>
+    </nav>
+    <a href="orcamento.html" class="btn btn--green btn--lg btn--block">Fazer orçamento grátis</a>
+    <a href="https://www.instagram.com/amazoncontrol_brasil/" target="_blank" rel="noopener" class="mobile-menu__ig">@amazoncontrol_brasil</a>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__canvas" id="mist"></canvas>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="pill reveal-up"><span class="pill__dot"></span> Atendimento rápido · Equipe certificada</span>
+          <h1 class="hero__title">
+            <span class="line"><span>Sua casa está limpa.</span></span>
+            <span class="line"><span>Mas está <i class="hl">protegida?</i></span></span>
+          </h1>
+          <p class="hero__lead reveal-up">
+            Soluções profissionais em controle de pragas urbanas: dedetização, descupinização,
+            desratização e sanitização para residências, empresas e condomínios.
+          </p>
+          <div class="hero__cta reveal-up">
+            <a href="orcamento.html" class="btn btn--green btn--lg magnetic">
+              Solicitar orçamento
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#servicos" class="btn btn--ghost btn--lg">Ver serviços</a>
+          </div>
+          <ul class="hero__trust reveal-up">
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Produtos registrados na ANVISA</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Seguro para pets e crianças</li>
+            <li><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Certificado de garantia</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orb">
+            <div class="orb__ring orb__ring--1"></div>
+            <div class="orb__ring orb__ring--2"></div>
+            <div class="orb__ring orb__ring--3"></div>
+            <div class="orb__core">
+              <svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg>
+            </div>
+            <div class="orb__chip orb__chip--a"><span>🪳</span> Baratas</div>
+            <div class="orb__chip orb__chip--b"><span>🐀</span> Roedores</div>
+            <div class="orb__chip orb__chip--c"><span>🐜</span> Cupins</div>
+            <div class="orb__chip orb__chip--d"><span>🦠</span> Vírus e bactérias</div>
+          </div>
+        </div>
+      </div>
+      <a href="#servicos" class="scroll-hint" aria-label="Rolar para serviços"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Dedetização</span><b>✦</b><span>Descupinização</span><b>✦</b><span>Desratização</span><b>✦</b><span>Sanitização</span><b>✦</b><span>Controle de escorpiões</span><b>✦</b><span>Limpeza de caixa d'água</span><b>✦</b>
+        <span>Dedetização</span><b>✦</b><span>Descupinização</span><b>✦</b><span>Desratização</span><b>✦</b><span>Sanitização</span><b>✦</b><span>Controle de escorpiões</span><b>✦</b><span>Limpeza de caixa d'água</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow reveal-up">Nossos serviços</span>
+          <h2 class="section__title reveal-up">Proteção completa contra <span class="hl-green">pragas urbanas</span></h2>
+          <p class="section__lead reveal-up">Diagnóstico técnico, tratamento direcionado e acompanhamento. Cada ambiente recebe um plano sob medida.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card tilt">
+            <div class="card__icon"><svg viewBox="0 0 48 48"><use href="#icon-spray"/></svg></div>
+            <h3>Dedetização</h3>
+            <p>Eliminação de baratas, formigas, aranhas, pulgas e escorpiões com gel, pulverização e iscas de baixa toxicidade.</p>
+            <span class="card__num">01</span>
+          </article>
+          <article class="card tilt">
+            <div class="card__icon"><svg viewBox="0 0 48 48"><use href="#icon-termite"/></svg></div>
+            <h3>Descupinização</h3>
+            <p>Tratamento de cupins de madeira seca e de solo, com barreira química que preserva móveis e estruturas.</p>
+            <span class="card__num">02</span>
+          </article>
+          <article class="card tilt">
+            <div class="card__icon"><svg viewBox="0 0 48 48"><use href="#icon-rat"/></svg></div>
+            <h3>Desratização</h3>
+            <p>Controle de ratos e camundongos com porta-iscas lacrados, mapeamento de pontos e vedação de acessos.</p>
+            <span class="card__num">03</span>
+          </article>
+          <article class="card tilt">
+            <div class="card__icon"><svg viewBox="0 0 48 48"><use href="#icon-sanitize"/></svg></div>
+            <h3>Sanitização</h3>
+            <p>Desinfecção de ambientes por nebulização, eliminando vírus, fungos e bactérias de superfícies e do ar.</p>
+            <span class="card__num">04</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="container">
+        <p class="statement__text" id="statement">
+          Uma casa de alto padrão merece mais do que apenas limpeza. Rotinas de limpeza ajudam, mas nem sempre são suficientes para eliminar pragas que se abrigam em locais de difícil acesso.
+        </p>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat"><strong><span class="count" data-to="100">0</span>%</strong><span>Produtos regularizados</span></div>
+        <div class="stat"><strong><span class="count" data-to="24">0</span>h</strong><span>Para retorno do orçamento</span></div>
+        <div class="stat"><strong><span class="count" data-to="90">0</span> dias</strong><span>De garantia no serviço*</span></div>
+        <div class="stat"><strong><span class="count" data-to="4">0</span></strong><span>Especialidades integradas</span></div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section process" id="processo">
+      <div class="container process__inner">
+        <div class="process__sticky">
+          <span class="eyebrow reveal-up">Como funciona</span>
+          <h2 class="section__title reveal-up">Do diagnóstico à <span class="hl-green">proteção contínua</span></h2>
+          <p class="section__lead reveal-up">Um método em 4 etapas para resolver o problema na raiz — e evitar que ele volte.</p>
+          <a href="orcamento.html" class="btn btn--green magnetic reveal-up">Agendar visita técnica</a>
+        </div>
+        <ol class="steps">
+          <span class="steps__line"><span class="steps__progress" id="stepsProgress"></span></span>
+          <li class="step">
+            <span class="step__dot">1</span>
+            <h3>Inspeção</h3>
+            <p>Vistoria técnica para identificar a praga, focos, rotas de entrada e nível de infestação.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot">2</span>
+            <h3>Plano sob medida</h3>
+            <p>Definimos produtos, métodos e cronograma adequados ao seu ambiente e à sua rotina.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot">3</span>
+            <h3>Aplicação segura</h3>
+            <p>Equipe uniformizada e com EPIs, aplicando produtos registrados com mínimo impacto no dia a dia.</p>
+          </li>
+          <li class="step">
+            <span class="step__dot">4</span>
+            <h3>Garantia e monitoramento</h3>
+            <p>Emissão de certificado e acompanhamento pós-serviço para manter o ambiente protegido.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- AMBIENTES -->
+    <section class="section envs" id="ambientes">
+      <div class="container">
+        <header class="section__head">
+          <span class="eyebrow reveal-up">Onde atuamos</span>
+          <h2 class="section__title reveal-up">Soluções para <span class="hl-green">cada ambiente</span></h2>
+        </header>
+        <div class="envs__grid">
+          <div class="env reveal-scale">
+            <div class="env__bg env__bg--1"></div>
+            <div class="env__body"><span>🏠</span><h3>Residências</h3><p>Proteção para sua família e pets, com produtos seguros e discretos.</p></div>
+          </div>
+          <div class="env reveal-scale">
+            <div class="env__bg env__bg--2"></div>
+            <div class="env__body"><span>🏢</span><h3>Condomínios</h3><p>Planos periódicos para áreas comuns, garagens, caixas de gordura e lixeiras.</p></div>
+          </div>
+          <div class="env reveal-scale">
+            <div class="env__bg env__bg--3"></div>
+            <div class="env__body"><span>🍽️</span><h3>Restaurantes</h3><p>Conformidade com a vigilância sanitária e laudos para fiscalização.</p></div>
+          </div>
+          <div class="env reveal-scale">
+            <div class="env__bg env__bg--4"></div>
+            <div class="env__body"><span>🏭</span><h3>Empresas e indústrias</h3><p>Manejo integrado de pragas (MIP) com relatórios e indicadores.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="section benefits">
+      <div class="container benefits__grid">
+        <div class="benefit reveal-up">
+          <div class="benefit__icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Prevenção</h3><p>Evita infestações e preserva o seu patrimônio.</p>
+        </div>
+        <div class="benefit reveal-up">
+          <div class="benefit__icon"><svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+          <h3>Ambientes saudáveis</h3><p>Mais segurança para você e sua família.</p>
+        </div>
+        <div class="benefit reveal-up">
+          <div class="benefit__icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Proteção contínua</h3><p>Soluções profissionais adaptadas à sua necessidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="duvidas">
+      <div class="container faq__inner">
+        <header class="section__head section__head--left">
+          <span class="eyebrow reveal-up">Dúvidas frequentes</span>
+          <h2 class="section__title reveal-up">Tudo o que você <span class="hl-green">precisa saber</span></h2>
+          <p class="section__lead reveal-up">Não encontrou sua pergunta? Fale com a gente — respondemos rapidinho.</p>
+        </header>
+        <div class="accordion">
+          <details class="acc reveal-up">
+            <summary>Preciso sair de casa durante a aplicação?<i></i></summary>
+            <div class="acc__body"><p>Depende do método. Em aplicações com gel e iscas não é necessário. Em pulverizações e nebulizações, orientamos um período curto de ausência, informado antes do serviço.</p></div>
+          </details>
+          <details class="acc reveal-up">
+            <summary>Os produtos fazem mal a crianças e animais?<i></i></summary>
+            <div class="acc__body"><p>Utilizamos produtos registrados na ANVISA, de baixa toxicidade, aplicados por técnicos treinados e seguindo todos os protocolos de segurança para pessoas e pets.</p></div>
+          </details>
+          <details class="acc reveal-up">
+            <summary>Com que frequência devo dedetizar?<i></i></summary>
+            <div class="acc__body"><p>Para residências, a recomendação geral é a cada 6 meses. Comércios, restaurantes e condomínios costumam exigir intervalos menores, conforme a legislação sanitária.</p></div>
+          </details>
+          <details class="acc reveal-up">
+            <summary>O serviço tem garantia?<i></i></summary>
+            <div class="acc__body"><p>Sim. Todo serviço é acompanhado de certificado com prazo de garantia. Se a praga voltar dentro do período, fazemos o reforço sem custo adicional.</p></div>
+          </details>
+          <details class="acc reveal-up">
+            <summary>Vocês emitem laudo para a vigilância sanitária?<i></i></summary>
+            <div class="acc__body"><p>Sim, emitimos certificado de execução de serviço e documentação técnica para empresas que precisam comprovar o controle de pragas.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTATO -->
+    <section class="cta" id="contato">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <span class="eyebrow eyebrow--light reveal-up">Orçamento sem compromisso</span>
+          <h2 class="cta__title reveal-up">Pronto para um ambiente <span class="hl">livre de pragas?</span></h2>
+          <p class="reveal-up">Responda algumas perguntas rápidas e receba um orçamento personalizado direto no seu WhatsApp.</p>
+          <div class="cta__links reveal-up">
+            <a href="https://www.instagram.com/amazoncontrol_brasil/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              @amazoncontrol_brasil
+            </a>
+            <a href="https://linktr.ee/amazoncontrolbrasil" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>
+              linktr.ee/amazoncontrolbrasil
+            </a>
+          </div>
+        </div>
+
+        <a href="orcamento.html" class="quiz-teaser magnetic-soft">
+          <span class="quiz-teaser__tag">⏱ Leva menos de 1 minuto</span>
+          <h3>Monte seu orçamento em poucos cliques</h3>
+          <ul class="quiz-teaser__steps">
+            <li><b>1</b> Tipo de imóvel</li>
+            <li><b>2</b> Praga ou serviço</li>
+            <li><b>3</b> Endereço e contato</li>
+          </ul>
+          <div class="quiz-teaser__preview" aria-hidden="true">
+            <span class="qt-opt">🏠 Casa</span>
+            <span class="qt-opt is-on">🏢 Apartamento</span>
+            <span class="qt-opt">🍽️ Comércio</span>
+          </div>
+          <span class="btn btn--green btn--lg btn--block">
+            Começar agora
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo logo--light">
+        <span class="logo__icon"><svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg></span>
+        <span class="logo__text"><strong>Amazon<em>Control</em></strong><small>Controle de Pragas Urbanas</small></span>
+      </a>
+      <p>© <span id="year"></span> AmazonControl. Especialistas em Controle de Pragas.</p>
+      <p class="footer__note">*Prazo de garantia varia conforme o tipo de serviço contratado.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.1L2 22l5-1.3A11 11 0 0 0 20.5 3.5Z"/><path d="M8.5 7.5c.3-.6.6-.6.9-.6h.6c.2 0 .5 0 .7.5l.9 2.1c.1.3 0 .5-.1.7l-.6.7c-.2.2-.2.4 0 .7a7.6 7.6 0 0 0 3.6 3.1c.3.1.5.1.7-.1l.8-1c.2-.3.5-.3.8-.2l2 1c.3.1.5.2.5.4 0 .3 0 1.2-.6 1.8-.6.7-1.6 1-2.5.8a11 11 0 0 1-6.6-5.4c-.8-1.5-.5-3 .2-3.5Z"/></svg>
+  </a>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="icon-shield" viewBox="0 0 64 64">
+        <path d="M32 4 8 13v17c0 15 10.2 27.4 24 30 13.8-2.6 24-15 24-30V13L32 4z" fill="currentColor"/>
+        <circle cx="32" cy="31" r="12" fill="none" stroke="#fff" stroke-width="4"/>
+        <path d="M32 19v24M20 31h24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="31" r="4" fill="#fff"/>
+      </symbol>
+      <symbol id="icon-spray" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="12" y="18" width="16" height="24" rx="3"/><path d="M16 18v-5h8v5M24 13h6l2 3"/>
+          <circle cx="38" cy="10" r="1.5"/><circle cx="42" cy="15" r="1.5"/><circle cx="38" cy="20" r="1.5"/><circle cx="43" cy="7" r="1"/>
+        </g>
+      </symbol>
+      <symbol id="icon-termite" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="24" cy="14" rx="5" ry="5"/><ellipse cx="24" cy="25" rx="6" ry="6"/><ellipse cx="24" cy="37" rx="5" ry="7"/>
+          <path d="M18 23l-8-4M30 23l8-4M18 27l-9 3M30 27l9 3M19 33l-7 6M29 33l7 6M21 9l-4-5M27 9l4-5"/>
+        </g>
+      </symbol>
+      <symbol id="icon-rat" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 30c0-8 7-14 16-14 7 0 12 4 14 9l5 1c2 .5 2 3 0 3.5L36 31c-1 4-6 7-14 7H10c-2 0-4-2-4-4z"/>
+          <circle cx="32" cy="18" r="4"/><circle cx="35" cy="26" r="1" fill="currentColor"/>
+          <path d="M8 36c-4 1-5 5-2 8"/>
+        </g>
+      </symbol>
+      <symbol id="icon-sanitize" viewBox="0 0 48 48">
+        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="24" cy="24" r="9"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M11 37l4-4M33 15l4-4"/>
+          <circle cx="21" cy="22" r="1.5" fill="currentColor"/><circle cx="27" cy="27" r="1.5" fill="currentColor"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
