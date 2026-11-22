@@ -171,7 +171,7 @@ function render(step) {
     case "intro":
       return `
         <div class="qintro">
-          <div class="qintro__badge" style="--i:0"><svg viewBox="0 0 64 64"><use href="#icon-shield"/></svg></div>
+          <div class="qintro__badge" style="--i:0"><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></div>
           <h1 class="qtitle qtitle--xl" style="--i:1">Sua operação protegida começa <span>aqui.</span></h1>
           <p class="qsub" style="--i:2">Responda algumas perguntas sobre a sua empresa e receba uma proposta técnica de controle de pragas direto no WhatsApp.</p>
           <ul class="qintro__perks" style="--i:3">

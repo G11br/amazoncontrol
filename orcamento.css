@@ -2,26 +2,34 @@
    AmazonControl — página de orçamento (quiz)
    ========================================================= */
 
-/* Paleta e tipos iguais aos da home (referência: papel, lima, oliva) */
+/* Identidade visual 2026 — mesma marca da home */
 .quiz-page {
-  --navy: #0b1a33; --navy-2: #13284a; --blue: #13284a;
-  --green: #2e9bff; --green-2: #1a7fe0; --lime: #2e9bff;
-  --sans: "Mona Sans", "Helvetica Neue", Arial, sans-serif;
-  --display: "Mona Sans", "Helvetica Neue", Arial, sans-serif;
-  --serif: "Fraunces", Georgia, serif;
+  --navy: #05172b; --navy-2: #12345a; --blue: #12345a;
+  --green: #3a86dc; --green-2: #2563c7; --lime: #3a86dc;
+  --sans: "Urbanist", "Helvetica Neue", Arial, sans-serif;
+  --display: "Evermore", "Comfortaa", "Urbanist", sans-serif;
+  --drop: 4px 999px 999px 999px;
+  --logo-ink: #ffffff;
   font-family: var(--sans);
 }
-.quiz-page .qtitle { font-weight: 900; font-stretch: 80%; letter-spacing: -.01em; }
-.quiz-page .qtitle span { font-family: var(--serif); font-style: italic; font-weight: 600; font-stretch: 100%; }
-.quiz-page .logo__text strong { font-weight: 800; font-stretch: 85%; }
-.quiz-page .logo__icon { color: #3fae2a; }
-.quiz-page .btn--green { color: var(--navy); border-radius: 10px; box-shadow: 0 10px 30px -14px rgba(46,155,255,.6); }
-.quiz-page .btn--green::before { background: #f2f5fa; }
+.quiz-page .qtitle { font-family: var(--display); font-weight: 700; letter-spacing: -.035em; line-height: 1.15; }
+.quiz-page .qtitle span { color: var(--lime); }
+.quiz-page .qhead__logo svg { display: block; width: clamp(128px, 14vw, 168px); height: auto; }
+.quiz-page .btn--green { color: #fff; border-radius: var(--drop); box-shadow: 0 14px 30px -14px rgba(37,99,199,.9); }
+.quiz-page .btn--green::before { background: #ffffff; }
 .quiz-page .btn--green:hover { color: var(--navy); }
-.quiz-page .btn--ghost { border-radius: 10px; }
-.quiz-page .opt, .quiz-page .qfield input, .quiz-page .qfield textarea, .quiz-page .qreview { border-radius: 10px; }
-.quiz-page .qhead { background: rgba(11,26,51,.8); }
-
+.quiz-page .btn--ghost { border-radius: var(--drop); }
+.quiz-page .opt, .quiz-page .qfield input, .quiz-page .qfield textarea, .quiz-page .qreview { border-radius: 4px 18px 18px 18px; }
+.quiz-page .opt__key, .quiz-page .opt__check, .quiz-page .qconsent__box { border-radius: 2px 50% 50% 50%; }
+.quiz-page .opt:has(input:checked) .opt__key { color: #fff; }
+.quiz-page .opt__check svg, .quiz-page .qconsent__box svg { stroke: #fff; }
+.quiz-page .qhead { background: rgba(5,23,43,.85); }
+.quiz-page .qhead__close { border-radius: 3px 50% 50% 50%; }
+.quiz-page .qfoot__back { border-radius: var(--drop); }
+.quiz-page .qintro__badge { background: none; box-shadow: none; width: 96px; height: 96px; }
+.quiz-page .qintro__badge svg { width: 100%; }
+.quiz-page .qbg__blob--1 { background: rgba(58,134,220,.22); }
+.quiz-page .qbg__blob--2 { background: rgba(18,52,90,.7); }
 
 .quiz-page {
   min-height: 100vh; min-height: 100svh;

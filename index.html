@@ -4,24 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>AmazonControl | Controle de Pragas para Empresas</title>
-  <meta name="description" content="AmazonControl — controle de pragas para empresas. Manejo integrado de pragas (MIP), dedetização, desratização, descupinização e sanitização para indústrias, food service, varejo, saúde, logística e condomínios, com laudos e documentação para auditorias.">
-  <meta name="theme-color" content="#f2f5fa">
+  <meta name="description" content="Controle de pragas para empresas: contratos de manejo integrado de pragas (MIP) para indústrias, food service, varejo, saúde e logística, com laudos e documentação para vigilância sanitária e auditorias.">
+  <meta name="theme-color" content="#05172b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..800&family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css?v=7">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400..700&family=Urbanist:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css?v=23">
 </head>
-<body data-theme="light" class="is-loading">
+<body data-theme="dark" class="is-loading">
 
   <!-- ============ LOADER ============ -->
   <div class="loader" id="loader" aria-hidden="true">
     <div class="loader__center">
-      <svg class="loader__mark" viewBox="0 0 64 64">
-        <path class="lm-shield" d="M32 4 8 13v17c0 15 10.2 27.4 24 30 13.8-2.6 24-15 24-30V13L32 4z"/>
-        <circle class="lm-ring" cx="32" cy="31" r="12"/>
-        <path class="lm-cross" d="M32 19v24M20 31h24"/>
-      </svg>
-      <p class="loader__word"><span class="ln"><span class="ln__in">Amazon<b>Control</b></span></span></p>
+      <svg class="loader__logo" viewBox="0 -38 1062 296" role="img" aria-label="AmazonControl"><use href="#ac-logo"/></svg>
     </div>
     <div class="loader__foot">
       <span>Controle de pragas para empresas</span>
@@ -33,12 +28,9 @@
   <!-- ============ CURSOR ============ -->
   <div class="cursor" id="cursor" aria-hidden="true">
     <span class="cursor__dot"></span>
-    <svg class="cursor__spray" viewBox="0 0 48 48"><use href="#i-spray"/></svg>
+    <svg class="cursor__spray" viewBox="0 0 100 100"><use href="#i-target"/></svg>
     <span class="cursor__label" id="cursorLabel"></span>
   </div>
-
-  <!-- ============ TOPO (fundo) ============ -->
-  <canvas class="topo" id="topo" aria-hidden="true"></canvas>
 
   <!-- ============ HEADER ============ -->
   <header class="hdr" id="hdr">
@@ -47,8 +39,7 @@
       <span>Proposta</span>
     </a>
     <a href="#top" class="hdr__logo" aria-label="AmazonControl — início">
-      <svg viewBox="0 0 64 64"><use href="#i-shield"/></svg>
-      <span>Amazon<b>Control</b></span>
+      <svg viewBox="0 -38 1062 296"><use href="#ac-logo"/></svg>
     </a>
     <button class="hdr__menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" data-cursor="Menu">
       <span></span><span></span>
@@ -75,28 +66,27 @@
 
   <main id="top">
     <!-- ============ HERO ============ -->
-    <section class="hero" id="hero" data-theme="light" data-cursor-mode="spray">
-      <canvas class="hero__bugs" id="bugs" aria-hidden="true"></canvas>
+    <section class="hero" id="hero" data-theme="dark">
+      <svg class="hero__mark" viewBox="-1 -1 102 102" aria-hidden="true"><use href="#ac-mark"/></svg>
 
       <div class="hero__inner">
-        <p class="hero__kicker reveal-fade">Controle de pragas para empresas</p>
-        <h1 class="hero__title" aria-label="Sua empresa sem pragas">
-          <span class="ln"><span class="ln__in">Sua empresa</span></span>
-          <span class="ln ln--serif"><span class="ln__in"><i>sem</i> pragas</span></span>
-          <span class="scribble scribble--hero" aria-hidden="true">auditada!</span>
+        <p class="hero__kicker reveal-fade">Controle de pragas B2B</p>
+        <h1 class="hero__title" aria-label="Controle de pragas para empresas">
+          <span class="ln"><span class="ln__in">controle de pragas</span></span>
+          <span class="ln ln--serif"><span class="ln__in">para empresas.</span></span>
         </h1>
-        <p class="hero__sub reveal-fade">Manejo integrado de pragas para indústrias, food service, varejo, saúde e logística — com laudos e documentação para vigilância sanitária e auditorias.</p>
+        <p class="hero__sub reveal-fade">Contratos de manejo integrado de pragas (MIP) para indústrias, food service, varejo, saúde e logística. Menos risco sanitário, auditorias sem surpresa e uma operação que não para.</p>
         <div class="hero__cta reveal-fade">
           <a href="orcamento.html" class="btn-ink" data-cursor="Proposta">Solicitar proposta técnica <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#setores" class="btn-line">Ver setores</a>
+          <a href="#setores" class="btn-line">Ver setores atendidos</a>
         </div>
       </div>
 
-      <div class="hero__counter reveal-fade" aria-live="polite">
-        <span class="hero__counter-label">Pragas eliminadas</span>
-        <strong id="killCount">00</strong>
-        <span class="hero__counter-hint" id="sprayHint">Passe o mouse para dedetizar</span>
-      </div>
+      <ul class="hero__facts reveal-fade">
+        <li><b>Laudos e certificados</b> para auditorias</li>
+        <li><b>Contratos</b> com visitas programadas</li>
+        <li><b>Aplicações planejadas</b> para não parar a operação</li>
+      </ul>
 
       <a href="#manifesto" class="hero__scroll reveal-fade" aria-label="Rolar para baixo">
         <svg viewBox="0 0 24 24"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
@@ -104,43 +94,40 @@
     </section>
 
     <!-- ============ MANIFESTO ============ -->
-    <section class="manifesto" id="manifesto" data-theme="light">
+    <section class="manifesto" id="manifesto" data-theme="accent">
       <div class="float-card fc-1" data-speed="-0.25"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span>Laudos para<br>auditoria</span></div>
-      <div class="float-card fc-2" data-speed="0.18"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Agenda fora<br>do pico</span></div>
+      <div class="float-card fc-2" data-speed="0.18"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Agenda sem parar<br>a operação</span></div>
       <div class="float-card fc-3" data-speed="-0.12"><svg viewBox="0 0 24 24"><path d="M4 21v-2a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v2"/><circle cx="12" cy="7" r="4"/></svg><span>Técnicos<br>com EPI</span></div>
-      <div class="float-card fc-4" data-speed="0.3"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Contratos<br>mensais</span></div>
+      <div class="float-card fc-4" data-speed="0.3"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Custo<br>previsível</span></div>
 
       <div class="manifesto__inner">
-        <p class="eyebrow">Por que importa</p>
+        <p class="eyebrow">O custo de não prevenir</p>
         <p class="manifesto__text" data-words>
-          Uma barata na cozinha vira interdição. Um rato no estoque vira prejuízo. Uma auditoria reprovada vira cliente perdido. A gente protege a sua operação.
+          Uma barata na cozinha vira interdição. Um rato no estoque vira mercadoria perdida. Uma auditoria reprovada vira contrato perdido. Prevenir sai mais barato que remediar.
         </p>
-        <span class="scribble scribble--sign" aria-hidden="true">AmazonControl</span>
       </div>
     </section>
 
     <!-- ============ MARQUEE ============ -->
     <div class="mq" aria-hidden="true">
       <div class="mq__track" id="mqTrack">
-        <span>Indústrias</span><i></i><span class="o">Restaurantes</span><i></i><span>Supermercados</span><i></i><span class="o">Hospitais</span><i></i><span>Logística</span><i></i><span class="o">Condomínios</span><i></i>
-        <span>Indústrias</span><i></i><span class="o">Restaurantes</span><i></i><span>Supermercados</span><i></i><span class="o">Hospitais</span><i></i><span>Logística</span><i></i><span class="o">Condomínios</span><i></i>
+        <span>Indústrias</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Food service</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span>Varejo</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Hospitais</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span>Logística</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Condomínios</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i>
+        <span>Indústrias</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Food service</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span>Varejo</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Hospitais</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span>Logística</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><span class="o">Condomínios</span><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i>
       </div>
     </div>
 
     <!-- ============ CONTRATO / EMERGÊNCIA ============ -->
-    <section class="split" data-theme="light">
-      <svg class="split__deco split__deco--l" data-speed="-0.2" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-roach"/></svg>
-      <svg class="split__deco split__deco--r" data-speed="0.25" viewBox="0 0 48 48" aria-hidden="true"><use href="#i-spray"/></svg>
+    <section class="split" data-theme="white">
 
       <article class="split__col">
         <h2 class="split__title"><span class="serif">Contrato</span><span class="sans">Contínuo</span></h2>
-        <span class="scribble scribble--split" aria-hidden="true">recomendado</span>
-        <p>Manejo Integrado de Pragas com visitas programadas, monitoramento de pontos e relatórios prontos para auditoria.</p>
+        <span class="tag">Recomendado</span>
+        <p>Manejo integrado com visitas programadas, monitoramento de pontos e relatórios mensais. Prevenção o ano todo, com custo previsível.</p>
         <a href="orcamento.html" class="sq-btn" aria-label="Proposta de contrato contínuo" data-cursor="Proposta"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </article>
       <article class="split__col">
         <h2 class="split__title"><span class="serif">Ação</span><span class="sans">Imediata</span></h2>
-        <p>Infestação ou fiscalização chegando? Atendimento pontual com prioridade para a sua operação não parar.</p>
+        <p>Infestação identificada ou fiscalização agendada? Atendimento pontual com prioridade, para resolver rápido e deixar tudo documentado.</p>
         <a href="orcamento.html" class="sq-btn" aria-label="Atendimento emergencial" data-cursor="Proposta"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </article>
     </section>
@@ -150,7 +137,7 @@
       <div class="scan__pin" id="scanPin">
         <header class="scan__head">
           <p class="eyebrow eyebrow--accent">Diagnóstico técnico</p>
-          <h2 class="big"><span class="serif">Onde elas</span> <span class="sans">se escondem</span></h2>
+          <h2 class="big"><span class="serif">os pontos críticos</span> <span class="sans">da sua operação</span></h2>
         </header>
         <div class="scan__stage">
           <svg class="scan__house" id="house" viewBox="0 0 1000 560" aria-hidden="true">
@@ -181,16 +168,25 @@
             <line class="scan__beam" id="beam" x1="0" y1="40" x2="0" y2="540"/>
           </svg>
           <ul class="spots" id="spots">
-            <li class="spot" style="--x:4.6%;--y:88%" data-at="0.05"><i></i><div><b>Roedores</b><span>área de resíduos</span></div></li>
-            <li class="spot" style="--x:19%;--y:50%" data-at="0.19"><i></i><div><b>Formigas</b><span>copa e escritório</span></div></li>
-            <li class="spot" style="--x:30%;--y:30%" data-at="0.30"><i></i><div><b>Roedores</b><span>forro e eletrocalhas</span></div></li>
-            <li class="spot" style="--x:42%;--y:92%" data-at="0.42"><i></i><div><b>Baratas</b><span>ralos e grelhas da cozinha</span></div></li>
-            <li class="spot" style="--x:52%;--y:76%" data-at="0.52"><i></i><div><b>Fungos e bactérias</b><span>câmara fria</span></div></li>
-            <li class="spot spot--l" style="--x:79%;--y:70%" data-at="0.79"><i></i><div><b>Cupins</b><span>paletes de madeira</span></div></li>
-            <li class="spot spot--l" style="--x:93%;--y:86%" data-at="0.93"><i></i><div><b>Roedores</b><span>doca de carga</span></div></li>
+            <li class="spot" style="--x:4.6%;--y:88%" data-at="0.05"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Roedores</b><span>área de resíduos</span></div></li>
+            <li class="spot" style="--x:19%;--y:50%" data-at="0.19"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Formigas</b><span>copa e escritório</span></div></li>
+            <li class="spot" style="--x:30%;--y:30%" data-at="0.30"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Roedores</b><span>forro e eletrocalhas</span></div></li>
+            <li class="spot" style="--x:42%;--y:92%" data-at="0.42"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Baratas</b><span>ralos e grelhas da cozinha</span></div></li>
+            <li class="spot" style="--x:52%;--y:76%" data-at="0.52"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Fungos e bactérias</b><span>câmara fria</span></div></li>
+            <li class="spot spot--l" style="--x:79%;--y:70%" data-at="0.79"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Cupins</b><span>paletes de madeira</span></div></li>
+            <li class="spot spot--l" style="--x:93%;--y:86%" data-at="0.93"><i><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></i><div><b>Roedores</b><span>doca de carga</span></div></li>
           </ul>
         </div>
-        <p class="scan__foot">Antes de qualquer aplicação, mapeamos focos, rotas de entrada e pontos críticos da sua operação — da doca à cozinha.</p>
+        <ol class="scan__legend" id="scanLegend">
+          <li><b>Roedores</b> área de resíduos</li>
+          <li><b>Formigas</b> copa e escritório</li>
+          <li><b>Roedores</b> forro e eletrocalhas</li>
+          <li><b>Baratas</b> ralos e grelhas da cozinha</li>
+          <li><b>Fungos e bactérias</b> câmara fria</li>
+          <li><b>Cupins</b> paletes de madeira</li>
+          <li><b>Roedores</b> doca de carga</li>
+        </ol>
+        <p class="scan__foot">Antes de qualquer aplicação, a vistoria técnica mapeia focos, rotas de entrada e áreas de risco — da doca de carga à cozinha industrial.</p>
       </div>
     </section>
 
@@ -198,26 +194,26 @@
     <section class="svc" id="servicos" data-theme="black">
       <header class="svc__head">
         <p class="eyebrow eyebrow--accent">Serviços</p>
-        <h2 class="big"><span class="serif">Soluções</span> <span class="sans">para empresas</span></h2>
+        <h2 class="big"><span class="serif">soluções</span> <span class="sans">para cada área</span></h2>
       </header>
       <div class="svc__grid">
         <a href="orcamento.html" class="cardx" data-cursor="Proposta">
-          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-roach"/></svg><span class="cardx__stamp">Eliminado</span><span class="cardx__mist"></span></div>
+          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-roach"/></svg></div>
           <p class="cardx__desc">Controle de insetos rasteiros e voadores em áreas de produção, estoque e atendimento.</p>
           <footer><span>Dedetização</span><b>01</b></footer>
         </a>
         <a href="orcamento.html" class="cardx" data-cursor="Proposta">
-          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-termite"/></svg><span class="cardx__stamp">Eliminado</span><span class="cardx__mist"></span></div>
+          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-termite"/></svg></div>
           <p class="cardx__desc">Tratamento de estruturas, mobiliário e paletes de madeira contra cupins de solo e de madeira seca.</p>
           <footer><span>Descupinização</span><b>02</b></footer>
         </a>
         <a href="orcamento.html" class="cardx" data-cursor="Proposta">
-          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-rat"/></svg><span class="cardx__stamp">Eliminado</span><span class="cardx__mist"></span></div>
+          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-rat"/></svg></div>
           <p class="cardx__desc">Porta-iscas lacrados e numerados, mapa de iscagem e vedação de acessos.</p>
           <footer><span>Desratização</span><b>03</b></footer>
         </a>
         <a href="orcamento.html" class="cardx" data-cursor="Proposta">
-          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-virus"/></svg><span class="cardx__stamp">Eliminado</span><span class="cardx__mist"></span></div>
+          <div class="cardx__art"><svg viewBox="0 0 200 200"><use href="#i-virus"/></svg></div>
           <p class="cardx__desc">Desinfecção de ambientes, câmaras frias e veículos contra vírus, fungos e bactérias.</p>
           <footer><span>Sanitização</span><b>04</b></footer>
         </a>
@@ -225,7 +221,7 @@
     </section>
 
     <!-- ============ SETORES ============ -->
-    <section class="sectors" id="setores" data-theme="light">
+    <section class="sectors" id="setores" data-theme="sky">
       <header class="sectors__head">
         <p class="eyebrow">Setores atendidos</p>
         <h2 class="big"><span class="serif">Para quem</span> <span class="sans">não pode parar</span></h2>
@@ -241,28 +237,67 @@
       </ul>
     </section>
 
-    <!-- ============ BARREIRA (formigas) ============ -->
-    <section class="barrier" id="barreira" data-theme="light">
-      <div class="barrier__text">
-        <p class="eyebrow">Manejo integrado de pragas</p>
-        <h2 class="big"><span class="serif">Prevenção</span> <span class="sans">que não passa</span></h2>
-        <p class="barrier__lead">Com o contrato de MIP, os pontos de entrada da sua operação ganham barreira química e monitoramento contínuo. Role e veja as formigas darem meia-volta.</p>
+    <!-- ============ MONITORAMENTO (MIP) ============ -->
+    <section class="monitor" id="monitoramento" data-theme="accent">
+      <div class="monitor__text">
+        <p class="eyebrow">Gestão do contrato</p>
+        <h2 class="big"><span class="serif">controle</span> <span class="sans">que se mede</span></h2>
+        <p class="monitor__lead">Cada ponto de monitoramento é numerado, verificado a cada visita e registrado em relatório. Sua equipe de qualidade acompanha indicadores, não suposições.</p>
       </div>
-      <div class="barrier__stage" id="antStage">
-        <canvas id="ants" aria-hidden="true"></canvas>
-        <span class="barrier__wall" id="wall"><em>Barreira ativa</em></span>
+      <div class="monitor__board" aria-label="Ilustração de um relatório de monitoramento">
+        <header class="mb__head">
+          <div><small>Unidade</small><b>Centro de distribuição</b></div>
+          <span class="mb__chip" id="mChip">Em conformidade</span>
+        </header>
+        <div class="mb__body">
+          <div class="mb__plan">
+            <small>Mapa de iscagem</small>
+            <ul class="mb__stations" id="stations">
+              <li class="st" style="--x:8%;--y:12%"><span>01</span></li>
+              <li class="st" style="--x:30%;--y:12%"><span>02</span></li>
+              <li class="st" style="--x:52%;--y:12%"><span>03</span></li>
+              <li class="st" style="--x:74%;--y:12%"><span>04</span></li>
+              <li class="st" style="--x:92%;--y:12%"><span>05</span></li>
+              <li class="st" style="--x:8%;--y:38%"><span>06</span></li>
+              <li class="st" style="--x:30%;--y:38%"><span>07</span></li>
+              <li class="st" style="--x:52%;--y:30%"><span>08</span></li>
+              <li class="st" style="--x:74%;--y:30%"><span>09</span></li>
+              <li class="st" style="--x:92%;--y:38%"><span>10</span></li>
+              <li class="st" style="--x:8%;--y:64%"><span>11</span></li>
+              <li class="st" style="--x:22%;--y:88%"><span>12</span></li>
+              <li class="st" style="--x:40%;--y:64%"><span>13</span></li>
+              <li class="st" style="--x:52%;--y:52%"><span>14</span></li>
+              <li class="st" style="--x:64%;--y:70%"><span>15</span></li>
+              <li class="st" style="--x:80%;--y:56%"><span>16</span></li>
+              <li class="st" style="--x:92%;--y:64%"><span>17</span></li>
+              <li class="st" style="--x:8%;--y:88%"><span>18</span></li>
+              <li class="st" style="--x:36%;--y:88%"><span>19</span></li>
+              <li class="st" style="--x:52%;--y:88%"><span>20</span></li>
+              <li class="st" style="--x:68%;--y:88%"><span>21</span></li>
+              <li class="st" style="--x:80%;--y:88%"><span>22</span></li>
+              <li class="st" style="--x:92%;--y:88%"><span>23</span></li>
+              <li class="st" style="--x:76%;--y:76%"><span>24</span></li>
+            </ul>
+          </div>
+          <div class="mb__kpis">
+            <div class="kpi"><small>Pontos verificados</small><strong><span id="mCheck">0</span><em>/24</em></strong></div>
+            <div class="kpi"><small>Ocorrências ativas</small><strong id="mIssues">9</strong></div>
+            <div class="kpi kpi--chart"><small>Índice de atividade</small><div class="mb__bars" id="mBars"><i style="--h:92%"><em>jun</em></i><i style="--h:74%"><em>jul</em></i><i style="--h:58%"><em>ago</em></i><i style="--h:40%"><em>set</em></i><i style="--h:24%"><em>out</em></i><i style="--h:10%"><em>nov</em></i></div></div>
+          </div>
+        </div>
+        <p class="mb__note">Ilustração. Os números reais vêm no relatório de cada visita.</p>
       </div>
     </section>
 
     <!-- ============ DOCUMENTAÇÃO ============ -->
-    <section class="docs" id="documentacao" data-theme="dark">
+    <section class="docs" id="documentacao" data-theme="navy">
       <header class="docs__head">
-        <p class="eyebrow eyebrow--accent">Documentação</p>
+        <p class="eyebrow eyebrow--accent">Compliance</p>
         <h2 class="big"><span class="serif">O que sua</span> <span class="sans">empresa recebe</span></h2>
-        <p class="docs__lead">Controle de pragas também é papel. Cada visita gera a documentação que a vigilância sanitária, as auditorias e os seus clientes pedem.</p>
+        <p class="docs__lead">Controle de pragas também é documentação. A cada visita, sua empresa recebe o que a vigilância sanitária, as auditorias e os seus clientes exigem.</p>
       </header>
       <div class="docs__grid" id="docsGrid">
-        <article class="doc"><div class="doc__paper"><header><span>AmazonControl</span><b>01</b></header><div class="doc__seal"><svg viewBox="0 0 64 64"><use href="#i-shield"/></svg></div><div class="doc__lines"><i></i><i></i><i></i></div></div><h3>Certificado de execução</h3><p>Comprova cada serviço realizado, com produtos, áreas tratadas e responsável técnico.</p></article>
+        <article class="doc"><div class="doc__paper"><header><span>AmazonControl</span><b>01</b></header><div class="doc__seal"><svg viewBox="-1 -1 102 102"><use href="#ac-mark"/></svg></div><div class="doc__lines"><i></i><i></i><i></i></div></div><h3>Certificado de execução</h3><p>Comprova cada serviço realizado, com produtos, áreas tratadas e responsável técnico.</p></article>
         <article class="doc"><div class="doc__paper"><header><span>AmazonControl</span><b>02</b></header><div class="doc__lines"><i></i><i></i><i></i><i></i><i></i></div></div><h3>Laudo técnico</h3><p>Diagnóstico das áreas, focos encontrados, riscos e recomendações.</p></article>
         <article class="doc"><div class="doc__paper"><header><span>AmazonControl</span><b>03</b></header><div class="doc__map"><i style="--x:18%;--y:30%">1</i><i style="--x:62%;--y:24%">2</i><i style="--x:80%;--y:68%">3</i><i style="--x:34%;--y:72%">4</i></div></div><h3>Mapa de iscagem</h3><p>Planta da unidade com os porta-iscas numerados e monitorados.</p></article>
         <article class="doc"><div class="doc__paper"><header><span>AmazonControl</span><b>04</b></header><div class="doc__chart"><i style="--h:40%"></i><i style="--h:70%"></i><i style="--h:55%"></i><i style="--h:30%"></i><i style="--h:18%"></i></div></div><h3>Relatório de monitoramento</h3><p>Indicadores por visita para acompanhar a evolução de cada ponto.</p></article>
@@ -299,7 +334,7 @@
     </section>
 
     <!-- ============ DÚVIDAS ============ -->
-    <section class="faq" id="duvidas" data-theme="light">
+    <section class="faq" id="duvidas" data-theme="white">
       <header>
         <p class="eyebrow">Dúvidas frequentes</p>
         <h2 class="big"><span class="serif">Perguntas</span> <span class="sans">de gestor</span></h2>
@@ -310,6 +345,7 @@
         <details><summary>Como funciona o contrato de Manejo Integrado de Pragas (MIP)?<i></i></summary><p>São visitas periódicas com monitoramento de pontos numerados, ações corretivas e relatórios com indicadores. O foco é prevenir — em vez de só agir quando a praga aparece.</p></details>
         <details><summary>Os produtos são seguros para áreas com alimentos?<i></i></summary><p>Usamos produtos registrados na ANVISA e técnicas adequadas para áreas de manipulação e armazenamento de alimentos, seguindo as orientações técnicas e de segurança.</p></details>
         <details><summary>Atendem empresas com mais de uma unidade?<i></i></summary><p>Sim. Montamos um plano para cada unidade, com a mesma padronização de visitas e documentação, para facilitar a gestão da sua rede.</p></details>
+        <details><summary>Como é definido o valor do contrato?<i></i></summary><p>O valor depende da área, do segmento, da quantidade de unidades e da frequência de visitas. Tudo é definido na proposta técnica, feita a partir do diagnóstico, sem custo para a sua empresa.</p></details>
         <details><summary>Qual a frequência ideal das visitas?<i></i></summary><p>Depende do segmento, do porte e das exigências sanitárias. Food service e indústria alimentícia costumam ter visitas mensais; definimos a frequência no diagnóstico.</p></details>
       </div>
     </section>
@@ -322,7 +358,7 @@
         <span class="ln ln--serif"><span class="ln__in"><i>sem pragas</i></span></span>
       </h2>
       <a href="orcamento.html" class="cta__btn" data-cursor="Vamos!">
-        <span>Solicitar proposta</span>
+        <span>Solicitar proposta técnica</span>
         <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </section>
@@ -332,7 +368,7 @@
   <footer class="ftr" data-theme="dark">
     <div class="ftr__top">
       <div>
-        <p class="eyebrow eyebrow--accent">Fale com a gente</p>
+        <p class="eyebrow eyebrow--accent">Fale com um especialista</p>
         <a href="orcamento.html" class="ftr__big">Solicitar proposta técnica ↗</a>
       </div>
       <ul>
@@ -341,7 +377,7 @@
         <li><a href="#" class="js-wa" target="_blank" rel="noopener">WhatsApp</a></li>
       </ul>
     </div>
-    <p class="ftr__word" aria-hidden="true">Amazon<span>Control</span></p>
+    <svg class="ftr__logo" viewBox="0 -38 1062 296" role="img" aria-label="AmazonControl — Controle de Pragas Urbanas"><use href="#ac-logo"/></svg>
     <div class="ftr__bottom">
       <span>© <span id="year"></span> AmazonControl · Controle de Pragas para Empresas</span>
       <span>*Prazo de garantia varia conforme o serviço contratado.</span>
@@ -355,16 +391,32 @@
   <!-- ============ ÍCONES ============ -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
-      <symbol id="i-shield" viewBox="0 0 64 64">
-        <path d="M32 4 8 13v17c0 15 10.2 27.4 24 30 13.8-2.6 24-15 24-30V13L32 4z" fill="#3fae2a"/>
-        <circle cx="32" cy="31" r="12" fill="none" stroke="#fff" stroke-width="4"/>
-        <path d="M32 19v24M20 31h24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-        <circle cx="32" cy="31" r="4" fill="#fff"/>
-      </symbol>
-      <symbol id="i-spray" viewBox="0 0 48 48">
-        <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="12" y="18" width="16" height="24" rx="3"/><path d="M16 18v-5h8v5M24 13h6l2 3"/>
-          <circle cx="38" cy="10" r="1.5"/><circle cx="42" cy="15" r="1.5"/><circle cx="38" cy="20" r="1.5"/><circle cx="43" cy="7" r="1"/>
+      <symbol id="ac-logo" viewBox="0 -38 1062 296"><g transform="translate(0 -14) scale(2.58)"><defs><linearGradient id="acslg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--logo-b1, #2563c7)"/><stop offset="1" stop-color="var(--logo-b2, #3d8bdd)"/></linearGradient><clipPath id="acslc"><path d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z"/></clipPath></defs>
+<path class="ac-shape" d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z" fill="url(#acslg)"/>
+<g class="ac-cross" fill="none" stroke="var(--logo-detail, #f7f7f8)" stroke-linecap="round">
+<circle cx="49" cy="50" r="29.5" stroke-width="8.5"/>
+<path d="M32.03 33.03L23.54 24.54M65.97 33.03L74.46 24.54M32.03 66.97L23.54 75.46" stroke-width="12.5"/>
+<path d="M65.26 66.26L92.84 93.84" stroke-width="9" stroke-linecap="butt" clip-path="url(#acslc)"/>
+<path d="M45 46L53 54M45 54L53 46" stroke-width="6"/>
+</g></g>
+<g fill="none" stroke-width="29" stroke-linejoin="miter" stroke-miterlimit="4">
+<path d="M14.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M85.5 0V100M124.5 0V100M124.5 44.5A30 30 0 0 1 184.5 44.5V100M184.5 44.5A30 30 0 0 1 244.5 44.5V100M283.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M354.5 0V100M379 14.5H455L387 85.5H463M487.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M597.5 0V100M597.5 50A35.5 35.5 0 0 1 668.5 50V100" transform="translate(300 0)" stroke="var(--logo-blue, #3a86dc)"/>
+<path d="M77.19 27.18A35.5 35.5 0 1 0 77.19 72.82M107.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M212.5 0V100M212.5 50A35.5 35.5 0 0 1 283.5 50V100M325 -26V100M303 14.5H353M372.5 0V100M372.5 50A35.5 35.5 0 0 1 408 14.5H416M435.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M540.5 -26V53.5A32 32 0 0 0 572.5 85.5H580" transform="translate(300 128)" stroke="var(--logo-ink, #05172b)"/>
+</g>
+<text x="898" y="156" fill="var(--logo-ink, #05172b)" font-family="Urbanist, Arial, sans-serif" font-weight="800" font-size="26" letter-spacing=".2"><tspan x="898" dy="0">CONTROLE</tspan><tspan x="898" dy="27">DE PRAGAS</tspan><tspan x="898" dy="27">URBANAS</tspan></text></symbol>
+      <symbol id="ac-mark" viewBox="-1 -1 102 102"><defs><linearGradient id="acsmg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--logo-b1, #2563c7)"/><stop offset="1" stop-color="var(--logo-b2, #3d8bdd)"/></linearGradient><clipPath id="acsmc"><path d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z"/></clipPath></defs>
+<path class="ac-shape" d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z" fill="url(#acsmg)"/>
+<g class="ac-cross" fill="none" stroke="var(--logo-detail, #f7f7f8)" stroke-linecap="round">
+<circle cx="49" cy="50" r="29.5" stroke-width="8.5"/>
+<path d="M32.03 33.03L23.54 24.54M65.97 33.03L74.46 24.54M32.03 66.97L23.54 75.46" stroke-width="12.5"/>
+<path d="M65.26 66.26L92.84 93.84" stroke-width="9" stroke-linecap="butt" clip-path="url(#acsmc)"/>
+<path d="M45 46L53 54M45 54L53 46" stroke-width="6"/>
+</g></symbol>
+      <symbol id="i-target" viewBox="0 0 100 100">
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <circle cx="50" cy="50" r="30" stroke-width="8"/>
+          <path d="M33 33l-9-9M67 33l9-9M33 67l-9 9M67 67l9 9" stroke-width="11"/>
+          <path d="M45 45l10 10M45 55l10-10" stroke-width="5.5"/>
         </g>
       </symbol>
       <symbol id="i-roach" viewBox="0 0 200 200">
@@ -411,6 +463,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="config.js?v=3"></script>
-  <script src="home.js?v=6"></script>
+  <script src="home.js?v=20"></script>
 </body>
 </html>

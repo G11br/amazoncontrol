@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -38 1062 296" role="img" aria-label="AmazonControl — Controle de Pragas Urbanas">
+<g transform="translate(0 -14) scale(2.58)"><defs><linearGradient id="acldg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--logo-b1, #2563c7)"/><stop offset="1" stop-color="var(--logo-b2, #3d8bdd)"/></linearGradient><clipPath id="acldc"><path d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z"/></clipPath></defs>
+<path class="ac-shape" d="M0 0H50A50 50 0 0 1 100 50A50 50 0 0 1 50 100A50 50 0 0 1 0 50Z" fill="url(#acldg)"/>
+<g class="ac-cross" fill="none" stroke="var(--logo-detail, #f7f7f8)" stroke-linecap="round">
+<circle cx="49" cy="50" r="29.5" stroke-width="8.5"/>
+<path d="M32.03 33.03L23.54 24.54M65.97 33.03L74.46 24.54M32.03 66.97L23.54 75.46" stroke-width="12.5"/>
+<path d="M65.26 66.26L92.84 93.84" stroke-width="9" stroke-linecap="butt" clip-path="url(#acldc)"/>
+<path d="M45 46L53 54M45 54L53 46" stroke-width="6"/>
+</g></g>
+<g fill="none" stroke-width="29" stroke-linejoin="miter" stroke-miterlimit="4">
+<path d="M14.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M85.5 0V100M124.5 0V100M124.5 44.5A30 30 0 0 1 184.5 44.5V100M184.5 44.5A30 30 0 0 1 244.5 44.5V100M283.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M354.5 0V100M379 14.5H455L387 85.5H463M487.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M597.5 0V100M597.5 50A35.5 35.5 0 0 1 668.5 50V100" transform="translate(300 0)" stroke="var(--logo-blue, #3a86dc)"/>
+<path d="M77.19 27.18A35.5 35.5 0 1 0 77.19 72.82M107.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M212.5 0V100M212.5 50A35.5 35.5 0 0 1 283.5 50V100M325 -26V100M303 14.5H353M372.5 0V100M372.5 50A35.5 35.5 0 0 1 408 14.5H416M435.5 50a35.5 35.5 0 1 0 71 0a35.5 35.5 0 1 0 -71 0M540.5 -26V53.5A32 32 0 0 0 572.5 85.5H580" transform="translate(300 128)" stroke="var(--logo-ink, #05172b)"/>
+</g>
+<text x="898" y="156" fill="var(--logo-ink, #05172b)" font-family="Urbanist, Arial, sans-serif" font-weight="800" font-size="26" letter-spacing=".2"><tspan x="898" dy="0">CONTROLE</tspan><tspan x="898" dy="27">DE PRAGAS</tspan><tspan x="898" dy="27">URBANAS</tspan></text>
+</svg>
